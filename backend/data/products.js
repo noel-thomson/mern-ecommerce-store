@@ -1,0 +1,148 @@
+const products = [
+  {
+    name: 'Apple Airpod Headphones',
+    image: '/images/1-airpods.jpg',
+    description:
+      'Bluetooth technology lets you connect it with compatible devices wirelessly. High-quality AAC audio offers an immersive listening experience and the built-in microphone allows you to take calls while working.',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 229.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Apple iPhone 12 Pro',
+    image: '/images/2-iphone.jpg',
+    description:
+      '5G. A14 Bionic. All‑new design. Ceramic Shield. LiDAR Scanner. A Pro camera system optimized for low light — and pushed even further on iPhone 12 Pro Max.',
+    brand: 'Ring',
+    category: 'Electronics',
+    price: 1399.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Amazon Echo Dot',
+    image: '/images/6-echo.jpg',
+    description:
+      'New look, new sound - Echo delivers clear highs, dynamic mids, and deep bass for rich, detailed sound that automatically adapts to any room. Perfect on your nightstand or an end table, or to round out any room, the Amazon Echo Dot features a clock and Amazon Alexa.',
+    brand: 'Amazon',
+    category: 'Electronics',
+    price: 79.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Dell XPS 15',
+    image: '/images/4-xps.jpg',
+    description:
+      'The most powerful XPS laptop we’ve ever built includes the latest 9th gen Intel® Core™ processor with up to 8 cores and 16 threads. Fully equipped with the creative tools you need to make magic happen faster and better.',
+    brand: 'Dell',
+    category: 'Electronics',
+    price: 1599.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Apple iPad Pro',
+    image: '/images/9-ipad.jpg',
+    description:
+      'Incredibly capable, easy to carry and has a battery life to keep you going all day. Frame the perfect photo or video with the Wide and new Ultra Wide cameras. All-day battery life. Wide & Ultra Wide cameras. Faster than most PCs.',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 1049.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Amazon Fire TV HD',
+    image: '/images/8-firetv.jpg',
+    description:
+      'Fire TV Stick 4K streaming device with Alexa built in, Ultra HD, Dolby Vision and includes the Alexa Voice Remote.',
+    brand: 'Amazon',
+    category: 'Electronics',
+    price: 69.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Google Nest Hub',
+    image: '/images/5-hub.jpg',
+    description:
+      'This voice-control device is a hub for your life, putting your calendar, the news, reminders, and more all on one easy-to-use dashboard.',
+    brand: 'Google',
+    category: 'Electronics',
+    price: 89.99,
+    countInStock: 7,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Powerbeats Pro',
+    image: '/images/7-beats.jpg',
+    description:
+      'Totally wireless Powerbeats Pro earphones are built to revolutionize your workouts. With zero wires to hold you back, the adjustable, secure-fit ear hooks are customizable for extended comfort and stability. A reinforced design for sweat and water resistance lets you take it to the next level. Each earbud has full volume and track controls and up to 9 hours of listening time to fuel your training with powerful, balanced sound.',
+    brand: 'Beats',
+    category: 'Electronics',
+    price: 299.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Google Nest Mini',
+    image: '/images/11-nest.jpg',
+    description:
+      'Control your home with just your voice. Thoughtfully designed for your home. Buy now. Get help around your home with your Google Assistant. Thoughtfully designed.',
+    brand: 'Google',
+    category: 'Electronics',
+    price: 69.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Samsung Galaxy Tab S7',
+    image: '/images/3-tab.jpg',
+    description:
+      'Meet Galaxy Tab S7. Work and play on the ultra smooth 120Hz display, powered by our most powerful chipset on a tablet. Get a PC-like experience with the snap of an optional keyboard, or use the ultra low latency S Pen to write with ease.',
+    brand: 'Samsung',
+    category: 'Electronics',
+    price: 919.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Apple Macbook Pro',
+    image: '/images/10-mbp.jpg',
+    description:
+      'New 13-inch model with faster performance and a new Magic Keyboard. Buy now. 2x the storage capacity. 13-inch Retina display. Touch Bar and Touch ID. Up to 10th-gen processors. Up to 32 GB memory.',
+    brand: 'Apple',
+    category: 'Electronics',
+    price: 1699.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 10,
+  },
+  {
+    name: 'Google Pixel 4a',
+    image: '/images/12-pixel.jpg',
+    description:
+      'Get incredible photos without paying a ridiculous price. The Pixel 4a camera has HDR+, Night Sight and more.',
+    brand: 'Facebook',
+    category: 'Electronics',
+    price: 479.99,
+    countInStock: 10,
+    rating: 4.5,
+    numReviews: 10,
+  },
+];
+
+module.exports = products;
