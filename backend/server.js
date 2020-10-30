@@ -17,8 +17,6 @@ app.use(express.json());
 app.use('/api/products', productRoutes);
 
 // production
-// const __dirname = path.resolve();
-
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(path.resolve(), '/frontend/build')));
   app.get('*', (req, res) =>
