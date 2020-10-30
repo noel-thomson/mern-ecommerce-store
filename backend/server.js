@@ -3,18 +3,35 @@ const dotenv = require('dotenv');
 const connectDB = require('./config/db');
 const productRoutes = require('./routes/productRoutes');
 const { notFound, errorHandler } = require('./middleware/errorMiddleware');
-
-// const { restart } = require('nodemon');
+const path = require('path');
 
 const app = express();
 dotenv.config();
 connectDB();
 
-app.get('/', (req, res) => {
-  res.send('API is running...');
-});
+// app.get('/', (req, res) => {
+//   res.send('API is running...');
+// });
+app.use(express.json());
 
 app.use('/api/products', productRoutes);
+
+// production
+// const __dirname = path.resolve();
+
+if (process.env.NODE_ENV === 'production') {
+  app.use(express.static(path.join(path.resolve(), '/frontend/build')));
+  app.get('*', (req, res) =>
+    res.sendFile(
+      path.resolve(path.resolve(), 'frontend', 'build', 'index.html')
+    )
+  );
+} else {
+  app.get('/', (req, res) => {
+    res.send('API is running....');
+  });
+}
+// production
 
 // error middleware
 app.use(notFound);

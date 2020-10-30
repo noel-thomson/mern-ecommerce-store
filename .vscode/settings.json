@@ -3,10 +3,13 @@
     "chipset",
     "dslr",
     "firetv",
+    "heroku",
+    "heroku postbuild",
     "homescreen",
     "lightsync",
     "mern",
     "mern pro shop",
+    "postbuild",
     "powerbeats",
     "pro",
     "shop"
