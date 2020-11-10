@@ -23,13 +23,16 @@ const importData = async () => {
     const [adminUser] = createdUsers.filter(
       (user) => user.isAdmin === true
     )._id;
+
     const seedProducts = products.map((product) => {
       return {
         ...product,
         user: adminUser,
       };
     });
+
     await Product.insertMany(seedProducts);
+
     console.log('Seed data has been imported!');
     process.exit();
   } catch (err) {
@@ -43,6 +46,7 @@ const destroyData = async () => {
     await User.deleteMany();
     await Product.deleteMany();
     await Order.deleteMany();
+
     console.log('Seed data has been deleted!');
     process.exit();
   } catch (err) {
@@ -51,6 +55,7 @@ const destroyData = async () => {
   }
 };
 
+// node backend/seeder -d (-d flag is argv[2])
 if (process.argv[2] === '-d') {
   destroyData();
 } else {

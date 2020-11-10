@@ -9,9 +9,6 @@ const app = express();
 dotenv.config();
 connectDB();
 
-// app.get('/', (req, res) => {
-//   res.send('API is running...');
-// });
 app.use(express.json());
 
 app.use('/api/products', productRoutes);
@@ -29,7 +26,6 @@ if (process.env.NODE_ENV === 'production') {
     res.send('API is running....');
   });
 }
-// production
 
 // error middleware
 app.use(notFound);
