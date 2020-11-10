@@ -1,3 +1,5 @@
+git push heroku master
+
 Final Project Repo:
 https://github.com/bradtraversy/proshop_mern
 

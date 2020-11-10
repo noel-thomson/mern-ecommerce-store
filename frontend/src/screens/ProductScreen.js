@@ -50,6 +50,7 @@ const ProductScreen = ({ match }) => {
               </Col>
               <Col className='product-details-right-col'>
                 <div className='product-availability'>
+                  {/* <p id='cart-input'>Cart Input</p> */}
                   Status:{' '}
                   <span>
                     {product.countInStock > 0 ? 'In Stock' : 'Out of Stock'}
@@ -57,7 +58,7 @@ const ProductScreen = ({ match }) => {
                 </div>
                 <Link
                   to={product.countInStock > 0 ? '/cart' : '#'}
-                  className='btn btn-light btn-animated btn-cart'
+                  className='btn btn-light btn-animated-slide btn-cart'
                 >
                   Add to Cart
                 </Link>
@@ -69,7 +70,7 @@ const ProductScreen = ({ match }) => {
       <Row>
         <Col>
           <div className='home-link-container'>
-            <Link to='/' className='btn btn-light btn-animated-2'>
+            <Link to='/' className='btn btn-light btn-hover'>
               Back To Top Products
             </Link>
           </div>

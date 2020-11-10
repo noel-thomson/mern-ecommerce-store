@@ -36,11 +36,15 @@
       align-items: center;
       padding: 0 5px;
       .product-availability {
+        #cart-input {
+          margin: 0;
+        }
         text-align: center;
         margin: 5px 0;
       }
       .btn-cart {
-        width: 100%;
+        width: max-content;
+        padding: 8px 15px;
       }
     }
   }
@@ -50,72 +54,48 @@
     padding-top: 40px;
   }
 }
-.btn-animated {
+.btn-animated-slide {
   position: relative;
   border: 1px solid #1a1a1a;
   padding: 0.5rem 1.25rem;
+  &:hover {
+    background-color: transparent;
+    color: white;
+    border: 1px solid #1a1a1a;
+    &::after {
+      width: 100%;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1a1a1a;
+    transition: width 0.3s ease-in-out;
+    z-index: -1;
+  }
 }
-.btn-animated:focus,
-.btn-animated:active {
+
+// overwrite bootstrap styling
+.btn-animated-slide:focus,
+.btn-animated-slide:active {
   background-color: #1a1a1a !important;
   border-color: #1a1a1a !important;
   box-shadow: none !important;
   color: white;
 }
-.btn-animated::after {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #1a1a1a;
-  transition: width 0.3s ease-in-out;
-  z-index: -1;
-}
-.btn-animated:hover::after {
-  width: 100%;
-}
-.btn-animated:hover {
-  background-color: transparent;
-  color: white;
-  border: 1px solid #1a1a1a;
-}
 
-.btn-animated-2 {
+.btn-hover {
   position: relative;
   border: 1px solid #1a1a1a;
   padding: 0.5rem 1.25rem;
   transition: all 0.5s ease;
+  &:hover {
+    color: white;
+    background-color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+  }
 }
-.btn-animated-2:hover {
-  color: white;
-  background-color: #1a1a1a;
-  border: 1px solid #1a1a1a;
-}
-// .btn-animated:focus,
-// .btn-animated:active {
-//   background-color: #1a1a1a !important;
-//   border-color: #1a1a1a !important;
-//   box-shadow: none !important;
-//   color: white;
-// }
-// .btn-animated::after {
-//   position: absolute;
-//   content: '';
-//   top: 0;
-//   left: 0;
-//   width: 0;
-//   height: 100%;
-//   background-color: #1a1a1a;
-//   transition: width 0.3s ease-in-out;
-//   z-index: -1;
-// }
-// .btn-animated:hover::after {
-//   width: 100%;
-// }
-// .btn-animated:hover {
-//   background-color: transparent;
-//   color: white;
-//   border: 1px solid #1a1a1a;
-// }
